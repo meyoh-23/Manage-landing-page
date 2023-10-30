@@ -1,10 +1,13 @@
 import { AppBar, Box, Button, Drawer, Link, Toolbar } from '@mui/material';
-import React from 'react';
+import React, { useState } from 'react';
 import {navItems} from './../assets/data';
 import logo from './../assets/images/logo.svg';
 import { MainButton } from './utils/Buttons';
+import { FaBars, FaXbox} from "react-icons/fa";
 
 const Navbar = () => {
+    const [mobileMenu, setMobileMEnu] = useState(false);
+
     return (
     <AppBar
     elevation={0}
@@ -56,7 +59,7 @@ const Navbar = () => {
                     sx={{
                         color: "primary.main",
                         fontFamily: "'Be Vietnam Pro', sans-serif",
-                        fontWeight: "400", 
+                        fontWeight: "500", 
                         fontSize: "1rem",
                         textTransform: 'capitalize',
                         "&:hover": {
@@ -95,16 +98,70 @@ const Navbar = () => {
             }
         }}
         >
-        mobile menu
+        <Button
+        size='large'
+        variant='text'
+        onClick={() => setMobileMEnu(!mobileMenu)}
+        >
+            {
+                mobileMenu? <FaXbox/> : <FaBars/>
+            }
+        </Button>
         </Box>
         <Drawer
-        role='menu'
-        
+        anchor='top'
+        open={mobileMenu}
+        onClick={() => setMobileMEnu(!mobileMenu)}
+        PaperProps={{
+            sx: {
+                width: "90vw",
+                mx: "auto",
+                mt: 12,
+                borderRadius: "10px",
+                display: {
+                    xs: "flex",
+                    md: "none",
+                }
+            }
+        }}
         >
-            mobile menu items
+            <Box sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                backgroundColor: "#fff",
+                justifyContent: "space-between",
+                gap: 3.25,
+                py: 4,
+            }}>
+                {
+                    navItems.map((link) => {
+                    const {id, item} = link;
+                    return (
+                        <Link
+                        underline='none'
+                        key={id} 
+                        href={`#${item}`} 
+                        sx={{
+                            color: "primary.main",
+                            fontFamily: "'Be Vietnam Pro', sans-serif",
+                            fontWeight: "500", 
+                            fontSize: "1rem",
+                            textTransform: 'capitalize',
+                            "&:hover": {
+                                color: "primary.light"
+                            }
+                        }}
+                        >
+                            {item}
+                        </Link>
+                    )
+                })
+                }
+            </Box>
         </Drawer>
-        </Toolbar>
-    </AppBar>
+    </Toolbar>
+</AppBar>
 )
 }
 

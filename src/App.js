@@ -34,7 +34,6 @@ function App() {
       <ThemeProvider theme={theme}>
         <Navbar/>
       </ThemeProvider>
-      
     </Box>
   );
 }
