@@ -4,6 +4,8 @@ import Navbar from './Navbar';
 import bgTabletPattern from './../assets/images/bg-tablet-pattern.svg';
 import heroIllustration from './../assets/images/illustration-intro.svg';
 import { MainButton } from './utils/Buttons';
+import Services from './Services';
+import Testimonials from './Testimonials';
 
 
 
@@ -62,7 +64,6 @@ function Hero() {
                 backgroundSize: "contain",
                 backgoundposition: "center top",
                 zIndex: "-1",
-                opacity: "1",
                 width: {
                     xs: "300px",
                     md: "100%",
@@ -210,6 +211,10 @@ function Hero() {
                     </Box>
                 </Box>
             </Box>
+            {/* I will have to put other componets from this point to avoid that huge gap being there */}
+            
+            <Services/>
+            <Testimonials/>
             </Box>
         </Box>
     </Box>

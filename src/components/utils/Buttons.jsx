@@ -27,4 +27,22 @@ const MainButton = ({text, mainColor, activeColor, textColor}) => {
     )
 }
 
-export {MainButton};
+const MinorButton =({bgColor, indexInfo}) => {
+    return (
+        <Button
+        variant="contained"
+        size="small"
+        sx={{
+            backgroundColor: `${bgColor}`,
+            px: 2,
+            py: 1,
+            borderRadius: 8,
+            color: "#fff",
+        }}
+        >
+        {indexInfo}
+    </Button>
+    )
+}
+
+export {MainButton, MinorButton};

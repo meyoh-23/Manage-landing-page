@@ -1,4 +1,4 @@
-import { Box, CssBaseline, ThemeProvider, createTheme } from "@mui/material";
+import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
 import Hero from "./components/Hero";
 
 const theme = createTheme({
@@ -30,14 +30,12 @@ const theme = createTheme({
 
 function App() {
   return (
-    <Box className="App">
+    <>
       <ThemeProvider theme={theme}>
         <CssBaseline/>
-        <Box>
           <Hero/>
-        </Box>
       </ThemeProvider>
-    </Box>
+    </>
   );
 }
 
