@@ -12,10 +12,6 @@ const Navbar = () => {
     <AppBar
     elevation={0}
     sx={{
-        px: {
-            sm: 1,
-            md:3.5,
-        },
         py: 4,
         background: "transparent",
     }}

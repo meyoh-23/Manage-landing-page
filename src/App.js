@@ -1,5 +1,5 @@
-import { Box, ThemeProvider, createTheme } from "@mui/material";
-import Navbar from "./components/Navbar";
+import { Box, CssBaseline, ThemeProvider, createTheme } from "@mui/material";
+import Hero from "./components/Hero";
 
 const theme = createTheme({
   breakpoints: {
@@ -32,7 +32,10 @@ function App() {
   return (
     <Box className="App">
       <ThemeProvider theme={theme}>
-        <Navbar/>
+        <CssBaseline/>
+        <Box>
+          <Hero/>
+        </Box>
       </ThemeProvider>
     </Box>
   );
