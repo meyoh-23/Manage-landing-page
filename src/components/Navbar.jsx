@@ -14,6 +14,9 @@ const Navbar = () => {
     sx={{
         py: 4,
         background: "transparent",
+        px:{
+            lg: 10,
+        }
     }}
     >
         <Toolbar
