@@ -7,8 +7,6 @@ import { MainButton } from './utils/Buttons';
 import Services from './Services';
 import Testimonials from './Testimonials';
 
-
-
 function Hero() {
 
     return (
