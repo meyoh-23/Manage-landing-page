@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material';
+import { TestimonialsSlider } from './utils/TestimonialSlider';
 
 
 function Testimonials() {
@@ -24,7 +25,9 @@ function Testimonials() {
       >
         What they’ve said
       </Typography>
-        
+      <Box>
+        <TestimonialsSlider/>
+      </Box>
     </Box>
   )
 }

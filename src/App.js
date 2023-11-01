@@ -2,6 +2,7 @@ import { CssBaseline, ThemeProvider, createTheme, Box } from "@mui/material";
 import Services from './components/Services';
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Testimonials from "./components/Testimonials";
 
 const theme = createTheme({
   breakpoints: {
@@ -39,6 +40,7 @@ function App() {
         <Hero/>
         <Box variant='main'>
           <Services/>
+          <Testimonials/>
         </Box>
           
       </ThemeProvider>

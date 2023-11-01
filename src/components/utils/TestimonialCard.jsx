@@ -8,7 +8,9 @@ function TestimonialCard({name, image, comments}) {
         maxWidth: "450px",
         alignItems: "center",
         borderRadius: "20px",
-        backgroundColor: "neutral.main"
+        backgroundColor: "neutral.main",
+        mx: 2,
+        my: 3,
     }}
     >
         <Box 
