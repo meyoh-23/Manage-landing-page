@@ -5,6 +5,7 @@ import ServicesCard from './utils/ServicesCard';
 function Services() {
   return (
     <Box
+    variant='section'
     sx={{
         display: "flex",
         flexDirection: {
@@ -42,7 +43,6 @@ function Services() {
                 },
                 fontFamily: "'Be Vietnam Pro', sans-serif",
                 fontWeight: "700",
-                maxWidth: "350px"
             }}
             >
                 What’s different about Manage?
@@ -57,7 +57,7 @@ function Services() {
                 fontFamily: "'Be Vietnam Pro', sans-serif",
                 fontWeight: "400",
                 color: "primary.light",
-                maxWidth: "350px"
+
             }}
             >
                 Manage provides all the functionality your team needs, without 
@@ -73,7 +73,6 @@ function Services() {
                 xs: "center",
                 md: "flex-start"
             },
-            maxWidth: "400px"
         }}>
             {
                 description.map((item) => {
@@ -92,4 +91,4 @@ function Services() {
   )
 }
 
-export default Services
+export default Services;

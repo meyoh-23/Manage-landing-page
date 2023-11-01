@@ -1,4 +1,6 @@
-import { CssBaseline, ThemeProvider, createTheme } from "@mui/material";
+import { CssBaseline, ThemeProvider, createTheme, Box } from "@mui/material";
+import Services from './components/Services';
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 
 const theme = createTheme({
@@ -33,7 +35,12 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline/>
-          <Hero/>
+        <Navbar/>
+        <Hero/>
+        <Box variant='main'>
+          <Services/>
+        </Box>
+          
       </ThemeProvider>
     </>
   );

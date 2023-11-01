@@ -1,7 +1,6 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material';
-import { testimonials } from '../assets/data';
-import TestimonialCard from './utils/TestimonialCard';
+
 
 function Testimonials() {
   return (
@@ -25,23 +24,7 @@ function Testimonials() {
       >
         What they’ve said
       </Typography>
-      <Box sx={{
-        display: "flex",
-        justifyContent: "space-between",
-        gap: 3,
-      }}>
-        {
-          testimonials.map((item)=> {
-            const {name, id, image, comments} = item;
-            return <TestimonialCard
-            key={id}
-            name={name}
-            comments={comments}
-            image={image}
-            />
-          })
-        }
-      </Box>
+        
     </Box>
   )
 }
