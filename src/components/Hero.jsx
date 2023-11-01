@@ -1,6 +1,5 @@
 import { Box, Grid, Typography, } from '@mui/material';
 import React from 'react';
-import Navbar from './Navbar';
 import heroIllustration from './../assets/images/illustration-intro.svg';
 import { MainButton } from './utils/Buttons';
 
