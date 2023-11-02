@@ -2,7 +2,7 @@ import { Box, Link, TextField, Typography } from "@mui/material"
 import { MinorButton } from "./utils/Buttons"
 import { useState } from "react"
 import { footerItem1, footerItem2, socialIcons } from './../assets/data';
-import logo from './../assets/images/logo.svg';
+import logo from './../assets/images/logo-white.svg';
 
 function Footer() {
     const [errorMessage, setErrorMessage] = useState(false);
