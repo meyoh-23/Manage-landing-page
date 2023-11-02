@@ -46,7 +46,6 @@ function App() {
           <CallToAction/>
           <Footer/>
         </Box>
-          
       </ThemeProvider>
     </>
   );
