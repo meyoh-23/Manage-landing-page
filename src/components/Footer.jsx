@@ -1,31 +1,11 @@
-import { Box, Link, TextField, Typography } from "@mui/material"
-import { MinorButton } from "./utils/Buttons"
-import { useState } from "react"
+import { Box, Link, Typography } from "@mui/material"
 import { footerItem1, footerItem2, socialIcons } from './../assets/data';
 import logo from './../assets/images/logo-white.svg';
+import ContactForm from "./utils/ContactForm";
 
 function Footer() {
-    const [errorMessage, setErrorMessage] = useState(false);
-    const [email, setEmail] = useState('');
     const currentDate = new Date();
     const year = currentDate.getFullYear();
-
-    const handleSubmit =(e) => {
-        e.preventDefault();
-        setErrorMessage(false);
-        setEmail('');
-
-        const pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-        if (!email) {
-            setErrorMessage(true);
-        }
-        const validEmail = pattern.test(email);
-        if ( validEmail) {
-            setErrorMessage(false);
-        } else {
-            setErrorMessage( true);
-        }
-    }
 
   return (
     <Box sx={{
@@ -50,25 +30,7 @@ function Footer() {
                 width: "90vw"
             }}
             >
-                <form noValidate autoComplete="off" onClick={ handleSubmit}>
-                    <TextField
-                    placeholder="Updates in your inbox..."
-                    onChange={(e) => setEmail(e.target.value)}
-                    error={errorMessage}
-                    helperText= {errorMessage ? 'Please enter a valued email' : " "}
-                    sx={{
-                        borderRadius: 8,
-                        backgroundColor: "#fff",
-                        height: "2.75rem"
-                    }}
-                    />
-                </form>
-                <MinorButton
-                indexInfo='GO'
-                bgColor='secondary.main'
-                size='large'
-                type='submit'
-                />
+                <ContactForm/>
             </Box>
             <Box
             sx={{
@@ -281,25 +243,7 @@ function Footer() {
                 gap: 4,
             }}
             >
-                <form noValidate autoComplete="off" onClick={ handleSubmit}>
-                    <TextField
-                    placeholder="Updates in your inbox..."
-                    onChange={(e) => setEmail(e.target.value)}
-                    error={errorMessage}
-                    helperText= {errorMessage ? 'Please enter a valued email' : " "}
-                    sx={{
-                        borderRadius: 8,
-                        backgroundColor: "#fff",
-                        height: "2.75rem"
-                    }}
-                    />
-                </form>
-                <MinorButton
-                indexInfo='GO'
-                bgColor='secondary.main'
-                size='large'
-                type='submit'
-                />
+                <ContactForm/>
             </Box>
             <Typography 
             variant="p"
