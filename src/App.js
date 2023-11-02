@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
 import CallToAction from "./components/CallToAction";
+import Footer from "./components/Footer";
 
 const theme = createTheme({
   breakpoints: {
@@ -43,6 +44,7 @@ function App() {
           <Services/>
           <Testimonials/>
           <CallToAction/>
+          <Footer/>
         </Box>
           
       </ThemeProvider>

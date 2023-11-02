@@ -3,6 +3,11 @@ import ali from './images/avatar-ali.png';
 import anisha from './images/avatar-anisha.png';
 import richard from './images/avatar-richard.png';
 import shanai from './images/avatar-shanai.png';
+import facebookIcon from './images/icon-facebook.svg';
+import youtubeIcon from './images/icon-youtube.svg';
+import twitterIcon from './images/icon-twitter.svg';
+import pinterestIcon from './images/icon-pinterest.svg';
+import instagramIcon from './images/icon-instagram.svg';
 
 export const testimonials = [
     {
@@ -72,5 +77,72 @@ export const navItems = [
     {
         id: 5,
         item: "Community"
+    },
+]
+
+export const footerItem1 = [
+    {
+        label: "Home",
+        id: 1,
+    },
+    {
+        label: "Pricing",
+        id: 2,
+    },
+    {
+        label: "Products",
+        id: 3,
+    },
+    {
+        label: "About Us",
+        id: 4,
+    },
+]
+
+export const footerItem2 = [
+    {
+        label: "Careers",
+        id: 1,
+    },
+    {
+        label: "Community",
+        id: 2,
+    },
+    {
+        label: "Privacy Policy",
+        id: 3,
+    },
+]
+
+export const socialIcons = [
+    {
+        icon: facebookIcon,
+        url: "#facebook.com/manage",
+        id: 1,
+        name: "facebook",
+    },
+    {
+        icon: youtubeIcon,
+        url: "#youtube.com/manage",
+        id: 2,
+        name: "youtube",
+    },
+    {
+        icon: twitterIcon,
+        url: "#twitter.com/manage",
+        id: 3,
+        name: "twitter",
+    },
+    {
+        icon: pinterestIcon,
+        url: "#facebook.com/manage",
+        id: 4,
+        name: "pinterrest",
+    },
+    {
+        icon: instagramIcon,
+        url: "#facebook.com/manage",
+        id: 5,
+        name: "instagram",
     },
 ]

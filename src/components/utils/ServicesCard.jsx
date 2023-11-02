@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 import React from 'react';
 import { MinorButton } from './Buttons';
 
-function ServicesCard({bgColor, indexInfo, descriptionInfo, descriptionHeader}) {
+function ServicesCard({bgColor, indexInfo, descriptionInfo, descriptionHeader, size}) {
   return (
     <Box variant='arcticle'
         sx={{
@@ -29,6 +29,7 @@ function ServicesCard({bgColor, indexInfo, descriptionInfo, descriptionHeader}) 
         <MinorButton
         indexInfo={indexInfo}
         bgColor={bgColor}
+        size='small'
         />
         <Typography
             sx={{

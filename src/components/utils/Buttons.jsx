@@ -27,11 +27,11 @@ const MainButton = ({text, mainColor, activeColor, textColor}) => {
     )
 }
 
-const MinorButton =({bgColor, indexInfo}) => {
+const MinorButton =({bgColor, indexInfo, size}) => {
     return (
         <Button
         variant="contained"
-        size="small"
+        size={size}
         sx={{
             backgroundColor: `${bgColor}`,
             px: 2,
