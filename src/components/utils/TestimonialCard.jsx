@@ -5,11 +5,14 @@ function TestimonialCard({name, image, comments}) {
     <Box variant='article'
     sx={{
         position: "relative",
-        maxWidth: "450px",
+        maxWidth: {
+            xs:"90vw",
+            md: "450px",
+        },
         alignItems: "center",
         borderRadius: "20px",
         backgroundColor: "neutral.main",
-        mx: 2,
+        mx: 1,
         my: 3,
     }}
     >

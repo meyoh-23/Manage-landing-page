@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material';
 import { TestimonialsSlider } from './utils/TestimonialSlider';
+import { MainButton } from './utils/Buttons';
 
 
 function Testimonials() {
@@ -12,7 +13,8 @@ function Testimonials() {
       flexDirection: "column",
       alignContent: "center",
       justifyContent: "space-between",
-      gap: 6,
+      gap: 3.5,
+      mb: 2.5
     }}
     >
       <Typography variant='h4'
@@ -25,8 +27,21 @@ function Testimonials() {
       >
         What they’ve said
       </Typography>
-      <Box>
-        <TestimonialsSlider/>
+      <TestimonialsSlider/>
+      <Box sx={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignContent: "center",
+        mx: "auto",
+        mt: 0,
+      }}>
+        <MainButton
+        text='get started'
+        mainColor='secondary.main'
+        textColor='#fff'
+        activeColor='secondary.light'
+        />
       </Box>
     </Box>
   )
