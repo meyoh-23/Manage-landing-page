@@ -135,7 +135,7 @@ export const socialIcons = [
     },
     {
         icon: pinterestIcon,
-        url: "#facebook.com/manage",
+        url: "#pinterest.com/manage",
         id: 4,
         name: "pinterrest",
     },

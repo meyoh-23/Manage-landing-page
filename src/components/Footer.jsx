@@ -163,6 +163,7 @@ function Footer() {
                 color: "neutral.main",
                 fontFamily: "'Be Vietnam Pro', sans-serif",
                 fontSize: "1rem",
+                textAlign: "center",
             }}>
                 Copyright {year}. All rights reserved.
             </Typography>
