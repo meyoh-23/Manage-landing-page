@@ -171,9 +171,145 @@ function Footer() {
             display: {
                 xs: "none",
                 md: "flex"
-            }
+            },
+            justifyContent: "space-between",
+            alignItems: "flex-start",
+            width: "90vw"
         }}>
-            <Typography>span desltop footer container</Typography>
+            <Box
+            sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                alignItems: "flex-start",
+                gap: 10,
+            }}
+            >
+                <img src={logo} alt="logo" />
+                <Box
+                sx={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "flex-start",
+                    gap: 3
+                }}
+                >
+                    {
+                        socialIcons.map((item) => {
+                            const {id, icon, url, name } = item;
+                            return (
+                                <span key={id}>
+                                    <Link 
+                                    href={url}
+                                    >
+                                    <img src={icon} alt={name} />
+                                    </Link>
+                                </span>
+                            )
+                        })
+                    }
+                </Box>
+            </Box>
+            <Box 
+            sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                alignItems: "flex-start",
+                gap: 2,
+            }}>
+                {
+                    footerItem1.map((item) => {
+                        const {id, label} = item;
+                        return <Link
+                        key={id}
+                        underline="none"
+                        href={`#${label}`}
+                        sx={{
+                            color:"neutral.main",
+                            fontFamily: "'Be Vietnam Pro', sans-serif",
+                            fontWeight: "400",
+                            fontSize: "1rem",
+                            whiteSpace: "nowrap"
+                        }}
+                        >
+                        {label}
+                        </Link>
+                    })
+                }
+                </Box>
+                <Box sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-between",
+                    alignItems: "flex-start",
+                    gap: 2,
+                }}>
+                    {
+                        footerItem2.map((item) => {
+                            const {id, label} = item;
+                            return <Link
+                            key={id}
+                            underline="none"
+                            href={`#${label}`}
+                            sx={{
+                                color:"neutral.main",
+                                fontFamily: "'Be Vietnam Pro', sans-serif",
+                                fontWeight: "400",
+                                fontSize: "1rem",
+                                whiteSpace: "nowrap"
+                            }}
+                            >
+                            {label}
+                            </Link>
+                        })
+                    }
+                </Box>
+            <Box sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                alignItems: "flex-start",
+                gap: 10,
+            }}>
+                <Box
+            sx={{
+                display: "flex",
+                justifyContent: "space-between",
+                alignContent: "flex-start",
+                gap: 4,
+            }}
+            >
+                <form noValidate autoComplete="off" onClick={ handleSubmit}>
+                    <TextField
+                    placeholder="Updates in your inbox..."
+                    onChange={(e) => setEmail(e.target.value)}
+                    error={errorMessage}
+                    helperText= {errorMessage ? 'Please enter a valued email' : " "}
+                    sx={{
+                        borderRadius: 8,
+                        backgroundColor: "#fff",
+                        height: "2.75rem"
+                    }}
+                    />
+                </form>
+                <MinorButton
+                indexInfo='GO'
+                bgColor='secondary.main'
+                size='large'
+                type='submit'
+                />
+            </Box>
+            <Typography 
+            variant="p"
+            sx={{
+                color: "neutral.main",
+                fontFamily: "'Be Vietnam Pro', sans-serif",
+                fontSize: "1rem",
+            }}>
+                Copyright {year}. All rights reserved.
+            </Typography>
+            </Box>
         </Box>
     </Box>
   )
