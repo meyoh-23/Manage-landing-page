@@ -1,10 +1,13 @@
-import { CssBaseline, ThemeProvider, createTheme, Box } from "@mui/material";
-import Services from './components/Services';
+import { CssBaseline, ThemeProvider, createTheme,  } from "@mui/material";
+import BackgroundContainer from "./components/BackgroundContainer";
+/* import Services from './components/Services';
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
 import CallToAction from "./components/CallToAction";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer"; */
+//import BackgroundContainer from "./BackgroundContainer";
+
 
 const theme = createTheme({
   breakpoints: {
@@ -38,14 +41,16 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline/>
-        <Navbar/>
+        
+        {/* <Navbar/>
         <Hero/>
         <Box variant='main'>
           <Services/>
           <Testimonials/>
           <CallToAction/>
           <Footer/>
-        </Box>
+        </Box> */}
+        <BackgroundContainer/>
       </ThemeProvider>
     </>
   );
