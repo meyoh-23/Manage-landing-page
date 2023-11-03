@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Manage-landing-page/static/css/main.e2bba464.css",
+    "main.js": "/Manage-landing-page/static/js/main.3ac4fa32.js",
+    "static/media/avatar-ali.png": "/Manage-landing-page/static/media/avatar-ali.88f9155cb730934f4d7c.png",
+    "static/media/avatar-shanai.png": "/Manage-landing-page/static/media/avatar-shanai.4bbe2f95e8975736fbd8.png",
+    "static/media/illustration-intro.svg": "/Manage-landing-page/static/media/illustration-intro.cb9a8a9551ca99f99a125230d38a2c36.svg",
+    "static/media/avatar-anisha.png": "/Manage-landing-page/static/media/avatar-anisha.484e15bc92ce6a0106ab.png",
+    "static/media/avatar-richard.png": "/Manage-landing-page/static/media/avatar-richard.ace8e0892f67a50c1e9e.png",
+    "static/media/logo-white.svg": "/Manage-landing-page/static/media/logo-white.349738da9472d4f821d3c24fb9c96ef7.svg",
+    "static/media/logo.svg": "/Manage-landing-page/static/media/logo.66a576108be35c08eb2ca3e40c17d151.svg",
+    "index.html": "/Manage-landing-page/index.html",
+    "static/media/icon-instagram.svg": "/Manage-landing-page/static/media/icon-instagram.54d3962efa2aa6085b776d1816557a6a.svg",
+    "static/media/icon-pinterest.svg": "/Manage-landing-page/static/media/icon-pinterest.45264b1d1cdf7f0c420d573853779f7b.svg",
+    "static/media/icon-twitter.svg": "/Manage-landing-page/static/media/icon-twitter.01a8907dd0beb126cff27d505c31be52.svg",
+    "static/media/icon-youtube.svg": "/Manage-landing-page/static/media/icon-youtube.7d6960fbb0c4831f7c667012f0b102d2.svg",
+    "static/media/icon-facebook.svg": "/Manage-landing-page/static/media/icon-facebook.1e9b33385e6dfe7a61acbff13373209c.svg",
+    "static/media/bg-tablet-pattern.svg": "/Manage-landing-page/static/media/bg-tablet-pattern.b6990a984c7bcc142d3e9783736e996a.svg",
+    "main.e2bba464.css.map": "/Manage-landing-page/static/css/main.e2bba464.css.map",
+    "main.3ac4fa32.js.map": "/Manage-landing-page/static/js/main.3ac4fa32.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e2bba464.css",
+    "static/js/main.3ac4fa32.js"
+  ]
+}
