@@ -45,7 +45,7 @@ function ServicesCard({bgColor, indexInfo, descriptionInfo, descriptionHeader, s
     <Typography 
     variant= 'p'
     sx={{
-        ml: 2,
+        ml: 5,
         textAlign: "flex-start",
         color: "primary.light",
         fontFamily: "'Be Vietnam Pro', sans-serif",

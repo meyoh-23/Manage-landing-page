@@ -11,7 +11,7 @@ function Hero() {
         <Box
         sx={{
             display: "flex",
-            justifyContent: "center",
+            
             overflow: "hidden",
             position: "relative",
         }}
@@ -35,7 +35,7 @@ function Hero() {
                     md: "flex"
                 },
             }}>
-                <Grid container spacing={0}>
+                <Grid container spacing={30}>
                     <Grid item md={6}>
                         <Box
                         sx={{
@@ -45,6 +45,7 @@ function Hero() {
                             alignItems: "flex-start",
                             gap: 2.5,
                             mt: 3,
+                            maxWidth: '300px'
                         }}
                         >
                             <Typography

@@ -131,8 +131,8 @@
 
     display: inline-block;
 
-    width: 20px;
-    height: 20px;
+    width: 60px;
+    height: 60px;
     margin: 0 5px;
     padding: 0;
 
@@ -148,18 +148,21 @@
     width: 20px;
     height: 20px;
     padding: 5px;
+    border: 2px solid hsl(12, 88%, 59%);
+    border-radius: 50%;
 
     cursor: pointer;
 
     color: transparent;
-    border: 0;
-    outline: none;
+    /* border: 0;
+    outline: none; */
     background: transparent;
 }
 
 .slick-dots li button:hover,
 .slick-dots li button:focus {
     outline: none;
+    background-color: hsl(12, 88%, 59%);
 }
 
 .slick-dots li button:hover:before,
