@@ -14,7 +14,12 @@ function Testimonials() {
       alignContent: "center",
       justifyContent: "space-between",
       gap: 3.5,
-      mb: 2.5
+      mb: 2.5,
+      mx: {
+            xs: 2.25,
+            md: 4.25,
+            lg: 7.5
+        }
     }}
     >
       <Typography variant='h4'

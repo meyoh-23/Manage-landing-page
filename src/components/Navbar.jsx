@@ -14,8 +14,10 @@ const Navbar = () => {
     sx={{
         py: 4,
         background: "transparent",
-        px:{
-            lg: 10,
+        mx: {
+            xs: 2.25,
+            md: 4.25,
+            lg: 7.5
         }
     }}
     >

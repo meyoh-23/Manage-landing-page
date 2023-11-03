@@ -21,6 +21,11 @@ function Footer() {
             justifyContent: "space-between",
             alignItems: "center",
             gap: 6,
+            px: {
+                xs: 2.25,
+                md: 4.25,
+                lg: 10
+            }
         }}>
             <Box
             sx={{

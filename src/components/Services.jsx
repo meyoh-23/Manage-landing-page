@@ -21,7 +21,12 @@ function Services() {
         mt: {
             xs: 10,
             md: 15,
-        }
+        },
+        mx: {
+                xs: 2.25,
+                md: 4.25,
+                lg: 7.5
+            }
     }}
     >
         <Box sx={{

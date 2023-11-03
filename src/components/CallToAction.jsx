@@ -16,6 +16,11 @@ function CallToAction() {
       },
       backgroundColor: "secondary.main",
       py: 3,
+      px: {
+            xs: 2.25,
+            md: 4.25,
+            lg: 7.5
+        }
     }}>
         <Typography
         variant="h4"

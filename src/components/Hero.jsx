@@ -22,6 +22,11 @@ function Hero() {
                     xs: 15,
                     md: 20,
                 },
+                mx: {
+                    xs: 2.25,
+                    md: 4.25,
+                    lg: 7.5
+                }
             }}
             >
                 <Box sx={{
