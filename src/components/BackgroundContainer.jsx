@@ -13,7 +13,7 @@ function BackgroundContainer() {
     <Box
     sx={{
       overflow: "hidden",
-      height: "2000px",
+      /* height: "2000px", */
       position: "absolute",
       top: 0,
       right: 0,

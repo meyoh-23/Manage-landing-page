@@ -32,14 +32,14 @@ function Footer() {
                 display: "flex",
                 justifyContent: "space-between",
                 alignContent: "flex-start",
-                width: "90vw"
+                width: "90%"
             }}
             >
                 <ContactForm/>
             </Box>
             <Box
             sx={{
-                width: "90vw",
+                width: "90%",
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "flex-start",
@@ -102,7 +102,7 @@ function Footer() {
             </Box>
             <Box
             sx={{
-                width: "90vw",
+                width: "90%",
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "flex-start",
@@ -142,7 +142,7 @@ function Footer() {
             },
             justifyContent: "space-between",
             alignItems: "flex-start",
-            width: "90vw"
+            width: "90%"
         }}>
             <Box
             sx={{
