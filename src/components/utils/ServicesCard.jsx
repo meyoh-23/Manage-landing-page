@@ -18,7 +18,11 @@ function ServicesCard({bgColor, indexInfo, descriptionInfo, descriptionHeader, s
         display: "flex",
         justifyContent: "space-between",
         gap: 2,
-        alignItems: "flex-start",
+        alignItems: "center",
+        borderRadius: {
+            xs: "5px",
+            md: " 0px"
+        },
         mt: 2,
         backgroundColor: {
             xs: "secondary.light",
