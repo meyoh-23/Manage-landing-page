@@ -13,32 +13,58 @@ function BackgroundContainer() {
     <Box
     sx={{
       overflow: "hidden",
-        height: "150%",
-        position: "relative",
-        width: "100vw",
+      height: "2000px",
+      position: "absolute",
+      top: 0,
+      right: 0,
+      left: 0,
+      margin: "0 auto",
+      justifyContent: "center"
     }}
     >
         <Box
         sx={{
-          overflow: "hidden",
-            backgroundImage: `url(${bgPattern})`,
-            backgroundRepeat: "no-repeat",
-            zIndex: "-1",
-            position: "absolute",
-            top: "-10%",
-            right: '-20%',
-            width: "90%",
-            height: "50%",
-            backgroundPosition: "top center",
+          position: "absolute",
+          backgroundImage: `url(${bgPattern})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contained",
+          backgroundPosition: "center top",
+          zIndex: "-1",
+          width: {
+            xs: "450px",
+            md: "100%",
+          },
+          height: {
+            xs: "450px",
+            md: "700px",
+          },
+          transform: {
+            xs: "translate(100px, -100px)",
+            md: "translate(410px, -80px)",
+          }
         }}
         ></Box>
         <Box
         sx={{
-            backgroundImage: `url(${bgPattern})`,
-            backgroundRepeat: "no-repeat",
-            zIndex: "-1",
-            top: "100%",
-            left: 0,
+            position: "absolute",
+          backgroundImage: `url(${bgPattern})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contained",
+          backgroundPosition: "center top",
+          zIndex: "-1",
+          opacity: "1",
+          width: {
+            xs: "300px",
+            md: "100%",
+          },
+          height: {
+            xs: "300px",
+            md: "700px",
+          },
+          transform: {
+            xs: "translate(202px, 530px)",
+            md: "translate(-810px, 1125px)",
+          }
         }}
         ></Box>
         <Navbar/>
