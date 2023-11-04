@@ -14,11 +14,6 @@ const Navbar = () => {
     sx={{
         py: 4,
         background: "transparent",
-        mx: {
-            xs: 2.25,
-            md: 4.25,
-            lg: 7.5
-        }
     }}
     >
         <Toolbar
@@ -26,6 +21,11 @@ const Navbar = () => {
             display: "flex",
             justifyContent: "space-between",
             alignItems: "center",
+            mx: {
+                xs: 2.25,
+                md: 4.25,
+                lg: 7.5
+            }
         }}
         >
         <Button
