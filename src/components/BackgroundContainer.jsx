@@ -69,9 +69,11 @@ function BackgroundContainer() {
         ></Box>
         <Navbar/>
         <Hero/>
-        <Services/>
-        <Testimonials/>
-        <CallToAction/>
+        <Box variant='main'>
+          <Services/>
+          <Testimonials/>
+          <CallToAction/>
+        </Box>
         <Footer/>
     </Box>
   )

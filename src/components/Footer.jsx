@@ -8,7 +8,9 @@ function Footer() {
     const year = currentDate.getFullYear();
 
   return (
-    <Box sx={{
+    <Box 
+    variant='footer'
+    sx={{
         py: 4,
         backgroundColor: "primary.main",
     }}>
