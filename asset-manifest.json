@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Manage-landing-page/static/css/main.e2bba464.css",
-    "main.js": "/Manage-landing-page/static/js/main.3ac4fa32.js",
+    "main.js": "/Manage-landing-page/static/js/main.8bf9eea6.js",
     "static/media/avatar-ali.png": "/Manage-landing-page/static/media/avatar-ali.88f9155cb730934f4d7c.png",
     "static/media/avatar-shanai.png": "/Manage-landing-page/static/media/avatar-shanai.4bbe2f95e8975736fbd8.png",
     "static/media/illustration-intro.svg": "/Manage-landing-page/static/media/illustration-intro.cb9a8a9551ca99f99a125230d38a2c36.svg",
@@ -17,10 +17,10 @@
     "static/media/icon-facebook.svg": "/Manage-landing-page/static/media/icon-facebook.1e9b33385e6dfe7a61acbff13373209c.svg",
     "static/media/bg-tablet-pattern.svg": "/Manage-landing-page/static/media/bg-tablet-pattern.b6990a984c7bcc142d3e9783736e996a.svg",
     "main.e2bba464.css.map": "/Manage-landing-page/static/css/main.e2bba464.css.map",
-    "main.3ac4fa32.js.map": "/Manage-landing-page/static/js/main.3ac4fa32.js.map"
+    "main.8bf9eea6.js.map": "/Manage-landing-page/static/js/main.8bf9eea6.js.map"
   },
   "entrypoints": [
     "static/css/main.e2bba464.css",
-    "static/js/main.3ac4fa32.js"
+    "static/js/main.8bf9eea6.js"
   ]
 }
